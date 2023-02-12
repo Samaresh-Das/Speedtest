@@ -26,7 +26,7 @@
       
     </div>
   </nav>
-    <div id="middle" class='all'>
+    <div id="middle" class='body'>
         <h1 class="heading">Speed Test</h1>
         <p>
           Download speed is most relevant for people who are consuming content on
@@ -126,7 +126,7 @@
     right: 0;
     top: 150px;
   }
-  .all {
+  .body {
     background: linear-gradient(135deg, #040740 0%, #03086D 100%);
     height: 900px;
   }  
