@@ -13,7 +13,7 @@
       <div class="collapse navbar-collapse justify-content-end">
         <ul class="nav ">
         <li class="nav-item">
-            <a href="/" class="nav-link">Home</a>
+            <a href="#top" class="nav-link">Home</a>
         </li>
         <li class="nav-item">
           <a href="/about" class="nav-link">About Us</a>
@@ -26,23 +26,52 @@
       
     </div>
   </nav>
-    <div id="middle">
+    <div id="middle" class='all'>
         <h1 class="heading">Speed Test</h1>
         <p>
           Download speed is most relevant for people who are consuming content on
           the Internet, and we want SPEED.com to be a very simple and fast speed
           test.
         </p>
+        <img src={image1} alt="img" class="responsive"/>
+        <a href="/speedtest"><button class="btn"> Take Test</button></a>
       </div>
       <div>
-        <img src={image1} alt="img" class="responsive"/>
-        <a href="/speedtest" class="btn">Take Test</a>
       </div>
 </main>
 <style>
+  img{
+    background-color: white;
+  }
+  ul {
+    margin: 14px 3px;
+    padding: 3px 17px;
+    color: aliceblue;
+    size: 44pt;
+  }
+  a {
+    color: white
+  }
+  li a{
+    border-radius: 5px;
+  }
+  li a:hover{
+    background-color: orange;
+    color: black; 
+    border-radius: 5px;
+
+  }
+  nav {
+    background-color: #060c59;
+  }
+  
+  .logo {
+    height: 3rem;
+    width: 9rem;
+  }
   h1 {
     position: relative;
-    top: 50px;
+    top: 20px;
     font-family: "Inika";
     font-size: 10vw;
     font-weight: 700;
@@ -93,39 +122,12 @@
   .responsive {
     position: absolute;
     height: auto;
-    width: 60%;
-    left: 40%;
-    top: 100px;
-    z-index: -1;
+    width: 45%;
+    right: 0;
+    top: 150px;
   }
-  img{
-    background-color: white;
-  }
-  ul {
-    margin: 14px 3px;
-    padding: 3px 17px;
-    color: aliceblue;
-    size: 44pt;
-  }
-  a {
-    color: white
-  }
-  li a{
-    border-radius: 5px;
-  }
-  li a:hover{
-    background-color: orange;
-    color: black; 
-    border-radius: 5px;
-
-  }
-  nav {
-    background-color: #060c59;
-  }
-  
-  .logo {
-    height: 3rem;
-    width: 7rem;
-  }
-
+  .all {
+    background: linear-gradient(135deg, #040740 0%, #03086D 100%);
+    height: 900px;
+  }  
 </style>
